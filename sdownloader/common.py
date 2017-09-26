@@ -249,7 +249,7 @@ def fetch(url, path):
             logger.info('{0} already exists on your system'.format(filename))
 
     else:
-        download(url, path)
+        download(url, path, show_progress=False)
     logger.info('stored at {0}'.format(path))
 
     return join(path, filename)
